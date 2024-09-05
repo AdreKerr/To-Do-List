@@ -1,1 +1,54 @@
 /* STYLE PAGE */
+
+
+
+/* backgournd of the whole page */
+.big{
+    background-color: #C4A77D;
+    /*
+    font-family: "Caveat", cursive;
+    */
+    font-family: "Gloria Hallelujah", cursive;
+}
+
+/* Adding Items to list */
+.title{
+    background-color: #70877F;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+#AddToList{
+    color: white;
+    background-color: #32322C;
+}
+#Add{
+    color: white;
+    background-color: #32322C;
+}
+#Add:hover{
+    scale: 1.1;
+}
+
+
+
+
+
+/* Display list */
+#MyList{
+    background-color: #A5402D;
+    color: #32322C;
+
+    /* button to x #A5402D */
+}
+#MyList:hover{
+    scale: 1.1;
+}
+
+
+/* SPACE */
+.space{
+    height: 100px;
+}
+
+

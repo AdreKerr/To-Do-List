@@ -18,6 +18,7 @@
     padding: 20px;
     color: white;
 }
+
 #AddToList{
     color: white;
     background-color: #32322C;
@@ -35,20 +36,64 @@
 
 
 /* Display list */
-#MyList{
-    background-color: #A5402D;
-    color: #32322C;
-
+/* List */
+#MyList li:nth-child(odd){
+    background-color: #32322C;
+    color: white;
+    list-style-type: none;
+    text-align: center;
     /* button to x #A5402D */
 }
-#MyList:hover{
+#MyList li:nth-child(even){
+    background-color: #70877F;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Mark as done Button */
+#MyList .MarkDone{
+    padding: 15px;
+    background-color: white;
+    color: #C4A77D;
+    border-radius: 50px;
+    /* text align left */
+}
+#MyList .MarkDone:hover{
     scale: 1.1;
 }
+
+#MyList .TextDisplay{
+    /* text align center */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Delete button */
+#MyList .DeleteBtn{
+    margin-top: 2px;
+    background-color: #A5402D;
+    color: white;
+    padding: 5px;
+    /* text align right */
+}
+#MyList .DeleteBtn:hover{
+    scale: 1.1;
+    background-color: white;
+    color: #A5402D;
+}
+
 
 
 /* SPACE */
 .space{
     height: 100px;
 }
+.space1{
+    height: 50px;
+}
+
+
+
 
 

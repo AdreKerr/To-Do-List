@@ -11,6 +11,7 @@ AddBtn.addEventListener("click",DisplayList);
 //Display funiton to write list
 function DisplayList(){
     //.trim() removes extra spaces in the bigging and end of item
+    // makes sure that the item is not blank
     let ItemDisplay = AddItem.value.trim()
     if(ItemDisplay !== ""){
         //first add item to display list

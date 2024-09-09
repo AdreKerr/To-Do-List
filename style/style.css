@@ -18,8 +18,31 @@
     padding: 20px;
     color: white;
 }
+/* homepage */
+.body{
+    background-color: #70877F;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/* lists */
+#Lists{
+    background-color: #32322C;
+    color: white;
+    padding: 10px;
+}
+#Lists:hover{
+    color: #A5402D;
+}
+#btn{
+    padding-bottom: 20px;
+}
 
 #AddToList{
+    color: white;
+    background-color: #32322C;
+}
+#TimeToList{
     color: white;
     background-color: #32322C;
 }
@@ -28,7 +51,8 @@
     background-color: #32322C;
 }
 #Add:hover{
-    scale: 1.1;
+    /* scale: 1.1; */
+    color: #A5402D;
 }
 
 
@@ -91,6 +115,9 @@
 }
 .space1{
     height: 50px;
+}
+.space2{
+    height: 20px;
 }
 
 

@@ -1,10 +1,12 @@
 // JS CODE
 
 // type in to add to list after clicking ADD should show up to the list
-// TITLE TO ADD ITEMS TO LIST
+// TITLE TO ADD ITEMS AND TIME TO LIST
 let AddItem = document.getElementById("AddToList");
+let AddTime = document.getElementById("TimeToList");
 let AddBtn = document.getElementById("Add");
-let List= document.getElementById("MyList")
+// Display list
+let List= document.getElementById("MyList");
 AddBtn.addEventListener("click",DisplayList);
 
 
@@ -13,24 +15,27 @@ function DisplayList(){
     //.trim() removes extra spaces in the bigging and end of item
     // makes sure that the item is not blank
     let ItemDisplay = AddItem.value.trim()
-    if(ItemDisplay !== ""){
+    let TimeDisplay = AddTime.value.trim()
+    if(ItemDisplay !== "" && TimeDisplay !== ""){
         //first add item to display list
         // DISPLAYS
-        DisplayTask(ItemDisplay)
+        DisplayTask(ItemDisplay,TimeDisplay)
         //then clear from input so you can add a new item to list
         // CLEARS
         AddItem.value = "";
+        AddTime.value = "";
     }//end if tree
 }//end funtion 
 
 
 //Function to Display tasks
 //Creating a task
-function DisplayTask(text){
+function DisplayTask(text,time){
     //creates "LI" so the task will display to the user
     let LiListDisplay = document.createElement("li");
     LiListDisplay.innerHTML = `
         <button class="MarkDone"> </button>
+        <span class="TimeDisplay">${time}</span>
         <span class="TextDisplay">${text}</span>
         <button class="DeleteBtn">X</button>
     `;

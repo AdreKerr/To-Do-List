@@ -2,23 +2,14 @@
 
 // type in to add to list after clicking ADD should show up to the list
 // cahnge store or date
-let BtnDateChange = document.getElementById("BtnChange");
-let ChangeInfo = document.getElementById("ChangeInfo");
+// let BtnDateChange = document.getElementById("BtnChange");
+// let ChangeInfo = document.getElementById("ChangeInfo");
 
 
 //date saver to change when you want to get info done
-BtnDateChange.addEventListener("click",()=>{
-    ChangeInfo.value = "";
-    // add an input to ask the date
-    let date = ChangeInfo.value;
-    // adding date to the top of list
-    let NewDisplay =
-    `<h5>Date</h5>
-    <span>${date}</span>`
-    + LiListDisplay 
-    // display date
-    List.appendChild(NewDisplay)
-})
+// BtnDateChange.addEventListener("click",()=>{
+//     ChangeInfo.value = "";
+// })
 
 // TITLE TO ADD ITEMS AND TIME TO LIST
 let AddItem = document.getElementById("AddToList");
@@ -35,6 +26,9 @@ function DisplayList(){
     // makes sure that the item is not blank
     let ItemDisplay = AddItem.value.trim()
     let TimeDisplay = AddTime.value.trim()
+    // add an input to ask the date
+    // let dataChange = ChangeInfo.value.trim();
+
     if(ItemDisplay !== "" && TimeDisplay !== ""){
         //first add item to display list
         // DISPLAYS
@@ -60,10 +54,17 @@ function DisplayTask(text,time){
         <span class="TextDisplay">${text}</span>
         <button class="DeleteBtn">X</button>
     `;
-    //button to scrach out "circle"
-    //displays text  "span"
-    //button to remove task from list "deleteBtn"
-   
+        //button to scrach out "circle"
+        //displays text  "span"
+        //button to remove task from list "deleteBtn"
+
+        /*
+    // adding date to the top of list
+    let NewDisplay = document.createElement("li");
+    NewDisplay.innerHTML = `
+        <h5>${info}</h5>
+    `;
+   */
 
     //marking as done
     let checkBtn = LiListDisplay.querySelector(".MarkDone");
@@ -77,7 +78,20 @@ function DisplayTask(text,time){
     
     //What actully make the item display
     //with out this nothing happends
-    List.appendChild(LiListDisplay);
+    /*
+    if(info !== ""){
+        if(text !== "" && time !== ""){
+            List.appendChild(LiListDisplay);
+        } else{
+            List.appendChild(NewDisplay);
+        }
+    } else {
+        List.appendChild(LiListDisplay)
+    }
+    */
+
+    List.appendChild(LiListDisplay)
+
 
     
     

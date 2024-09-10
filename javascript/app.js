@@ -1,6 +1,25 @@
 // JS CODE
 
 // type in to add to list after clicking ADD should show up to the list
+// cahnge store or date
+let BtnDateChange = document.getElementById("BtnChange");
+let ChangeInfo = document.getElementById("ChangeInfo");
+
+
+//date saver to change when you want to get info done
+BtnDateChange.addEventListener("click",()=>{
+    ChangeInfo.value = "";
+    // add an input to ask the date
+    let date = ChangeInfo.value;
+    // adding date to the top of list
+    let NewDisplay =
+    `<h5>Date</h5>
+    <span>${date}</span>`
+    + LiListDisplay 
+    // display date
+    List.appendChild(NewDisplay)
+})
+
 // TITLE TO ADD ITEMS AND TIME TO LIST
 let AddItem = document.getElementById("AddToList");
 let AddTime = document.getElementById("TimeToList");
@@ -24,7 +43,9 @@ function DisplayList(){
         // CLEARS
         AddItem.value = "";
         AddTime.value = "";
-    }//end if tree
+    } else{
+        confirm("Need to INPUT something");
+    }//end if else tree
 }//end funtion 
 
 
@@ -58,7 +79,8 @@ function DisplayTask(text,time){
     //with out this nothing happends
     List.appendChild(LiListDisplay);
 
-
+    
+    
     //deleting tasks
     //deletes tesk from the list after clicking the "X"
     let deleteBtn = LiListDisplay.querySelector(".DeleteBtn");
@@ -72,5 +94,8 @@ function DisplayTask(text,time){
     
 }//end function display tast
 
+
+
+// make it when you refresh to save info
 
 

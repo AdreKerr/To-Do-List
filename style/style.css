@@ -37,6 +37,21 @@
 #btn{
     padding-bottom: 20px;
 }
+/* home page link */
+#HomePage{
+    background-color: none;
+    color: white;
+    text-align: center;
+}
+#HomePage:hover{
+    color: #A5402D;
+}
+/* change date / store link */
+#ChangeInfo{
+    background-color: #32322C;
+    color: white;
+    text-align: center;
+}
 
 #AddToList{
     color: white;

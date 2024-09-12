@@ -76,20 +76,21 @@ function DisplayTask(text,time){
     })
     
     
-    //What actully make the item display
-    //with out this nothing happends
     /*
+    thying to figure out how to get the data to display only once
     if(info !== ""){
         if(text !== "" && time !== ""){
             List.appendChild(LiListDisplay);
-        } else{
-            List.appendChild(NewDisplay);
+            } else{
+                List.appendChild(NewDisplay);
         }
-    } else {
-        List.appendChild(LiListDisplay)
+        } else {
+            List.appendChild(LiListDisplay)
     }
     */
-
+   
+   //What actully make the item display
+   //with out this nothing happends
     List.appendChild(LiListDisplay)
 
 

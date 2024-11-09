@@ -8,12 +8,15 @@ import ListDisplay from "./components/ListDisplay";
 import './style.css';
 
 function App() {
-    <div className='big'>
+    <div className="big">
 
         {/* pages go here */}
         <Header />
-        <Title />
-        <ListDisplay />
+        <div className="container">
+
+            <Title />
+            <ListDisplay />
+        </div>
 
     </div>
 }

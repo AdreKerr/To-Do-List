@@ -1,0 +1,151 @@
+/* STYLE PAGE */
+
+
+
+/* backgournd of the whole page */
+.big {
+    background-color: #C4A77D;
+    /*
+    font-family: "Caveat", cursive;
+    */
+    font-family: "Gloria Hallelujah", cursive;
+}
+
+/* Adding Items to list */
+.title {
+    background-color: #70877F;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* homepage */
+.body {
+    background-color: #70877F;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/* lists */
+#Lists {
+    background-color: #32322C;
+    color: white;
+    padding: 10px;
+}
+
+#Lists:hover {
+    color: #A5402D;
+}
+
+#btn {
+    padding-bottom: 20px;
+}
+
+/* home page link */
+#HomePage {
+    background-color: none;
+    color: white;
+    text-align: center;
+}
+
+#HomePage:hover {
+    color: #A5402D;
+}
+
+/* change date / store link */
+#ChangeInfo {
+    background-color: #32322C;
+    color: white;
+    text-align: center;
+}
+
+#AddToList {
+    color: white;
+    background-color: #32322C;
+}
+
+#TimeToList {
+    color: white;
+    background-color: #32322C;
+}
+
+#Add {
+    color: white;
+    background-color: #32322C;
+}
+
+#Add:hover {
+    /* scale: 1.1; */
+    color: #A5402D;
+}
+
+
+
+
+
+/* Display list */
+/* List */
+#MyList li:nth-child(odd) {
+    background-color: #32322C;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+    /* button to x #A5402D */
+}
+
+#MyList li:nth-child(even) {
+    background-color: #70877F;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Mark as done Button */
+#MyList .MarkDone {
+    padding: 15px;
+    background-color: white;
+    color: #C4A77D;
+    border-radius: 50px;
+    /* text align left */
+}
+
+#MyList .MarkDone:hover {
+    scale: 1.1;
+}
+
+#MyList .TextDisplay {
+    /* text align center */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Delete button */
+#MyList .DeleteBtn {
+    margin-top: 2px;
+    background-color: #A5402D;
+    color: white;
+    padding: 5px;
+    /* text align right */
+}
+
+#MyList .DeleteBtn:hover {
+    scale: 1.1;
+    background-color: white;
+    color: #A5402D;
+}
+
+
+
+/* SPACE */
+.space {
+    height: 100px;
+}
+
+.space1 {
+    height: 50px;
+}
+
+.space2 {
+    height: 20px;
+}

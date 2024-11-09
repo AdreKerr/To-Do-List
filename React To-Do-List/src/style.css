@@ -4,7 +4,7 @@
 
 /* backgournd of the whole page */
 .big {
-    background-color: #C4A77D;
+    background-color: #c4a77d;
     /*
     font-family: "Caveat", cursive;
     */
@@ -13,7 +13,7 @@
 
 /* Adding Items to list */
 .title {
-    background-color: #70877F;
+    background-color: #70877f;
     text-align: center;
     padding: 20px;
     color: white;
@@ -137,7 +137,7 @@
 
 
 
-/* SPACE */
+/* SPACE
 .space {
     height: 100px;
 }
@@ -148,4 +148,4 @@
 
 .space2 {
     height: 20px;
-}
+} */

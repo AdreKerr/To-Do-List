@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Title from "./components/Title";
 import ListDisplay from "./components/ListDisplay";
 // style
-import './style.css';
+import './Style.css';
 
 function App() {
     <div className="big">
